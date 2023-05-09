@@ -6,9 +6,6 @@
     {% bootstrap_css %} {% bootstrap_javascript %}
   </head>
   <body>
-
-    {% comment %} header {% endcomment %}
-
     {% if messages %} 
       {% for message in messages %}
         <div class="alert alert-{{ message.tags }}">
@@ -57,10 +54,7 @@
             </a>
             <a class="me-3 py-2 text-dark text-decoration-none" href="#">
               Login
-            </a>        
-            <a class="me-3 py-2 text-dark text-decoration-none" href={% url "profile_edit" %}>
-              {{ user }}
-            </a>       
+            </a>
           </nav>
         </div>
       </header>
